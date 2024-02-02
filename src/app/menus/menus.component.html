@@ -1,0 +1,14 @@
+<section class="main">
+    <div class="main-top">
+        <h1>Menú</h1>
+        <i class="fas fa-user-cog"></i>
+    </div>
+    <div class="main-skills">
+        <div *ngFor="let menu of menus" class="card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>{{menu.nombre}}</h3>
+            <p>{{menu.ingredientes}}</p>
+            <button>Agregar al carrito</button>
+        </div>
+    </div>
+</section>
